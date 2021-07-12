@@ -1,5 +1,7 @@
 import React, { useEffect, useState} from "react";
-import sanityClient from "../client.js"
+import sanityClient from "../client.js";
+import '../index.css';
+
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -21,32 +23,21 @@ export default function Project() {
     }, []);
 
     return (
-        <main className="min-h-screen p-12 bg-blue-100">
-            <section className="container mx-auto">
-                <h1 className="flex justify-center text-5xl">My Projects</h1>
-                <h2 className="flex justify-center mb-12 text-lg text-gray-600">Welcome to my project Page</h2>
-                <section className="grid grid-cols-2 gap-8">
-                    {projectData && projectData.map((project, index)=> (
-                    <article className="relative p-8 bg-white rounded-lg shadow-xl">
-                        <h3 className="mb-2 text-3xl font-bold text-gray-800 hover:text-blue-700">
-                            <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer">{project.title}</a>
-                        </h3>
-                        <img src={project.mainImage.asset.url} alt={project.mainImage.alt} className="object-scale-down rounded-lg h-96 w-120" />
-                        <div className="space-x-4 text-xs text-gray-500">
-                            <span>
-                                <strong className="font-bold">Type</strong>:{" "}{project.projectType}
-                            </span>
-                            
-                            <p className="my-6 text-lg leading-relaxed text-gray-700">{project.description}</p>
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold text-blue-500 hover:underline hover:text-blue-400">View The Project{" "}
-                                <span role="img" aria-label="pointer">➡️</span>
-                            </a>
-                            
+        <div className="antialiased text-gray-800 bg-gray-100">
+            <div className="container relative flex flex-col px-6 mx-auto space-y-8">
+                <div className="absolute inset-0 z-0 w-2 h-full bg-white shadow-md left-17 md:mx-auto md:right-0 md:left-0"></div>
+                {projectData && projectData.map((project, index)=> (
+                <div className="relative z-10 ">
+                    <img src={project.mainImage.asset.url} alt={project.mainImage.alt} className="timeline-img" />
+                    <div className={`${index % 2 === 0 ? "timeline-container-left timeline-container" : "timeline-container" }`} >
+                        <div className={`${index % 2 === 0 ? "timeline-pointer-left timeline-pointer" : "timeline-pointer" }`} aria-hidden="true"></div>
+                        <div className="p-6 bg-white rounded-md shadow-md">
+                            <p className="pt-1">{project.description}</p>
                         </div>
-                    </article>
-                    ))}
-                </section>
-            </section>
-        </main>
+                    </div>
+                </div>  
+                ))}
+            </div>
+        </div>
     )
 }

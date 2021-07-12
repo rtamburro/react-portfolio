@@ -10,10 +10,10 @@ export default function NavBar() {
                     <NavLink to="/" exact activeClassName="text-white" className="inline-flex items-center px-3 py-6 mr-4 text-4xl font-bold tracking-widest text-green-300 hover:text-green-900">
                         Ronnie
                     </NavLink>
-                    <NavLink to="/projects" activeClassName="text-green-100 bg-blue-700" className="inline-flex items-center px-3 py-3 my-6 text-green-200 rounded hover:text-green-900">
+                    <NavLink to="/projects" activeClassName="text-green-100 bg-gray-700" className="inline-flex items-center px-3 py-3 my-6 text-green-200 rounded hover:text-green-900">
                         Projects
                     </NavLink>
-                    <NavLink to="/about" activeClassName="text-green-100 bg-blue-700" className="inline-flex items-center px-3 py-3 my-6 text-green-200 rounded hover:text-green-900">
+                    <NavLink to="/about" activeClassName="text-green-100 bg-gray-700" className="inline-flex items-center px-3 py-3 my-6 text-green-200 rounded hover:text-green-900">
                         About Me!
                     </NavLink>
                 </nav>

@@ -7,7 +7,7 @@ export default function Project() {
     const [projectData, setProjectData] = useState(null);
 
     useEffect(() => {
-        sanityClient.fetch(`*[_type == "project"]{
+        sanityClient.fetch(`*[_type == "project"] | order(index) {
             title,
             mainImage{
                 asset->{

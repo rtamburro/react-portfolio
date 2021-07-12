@@ -23,15 +23,15 @@ export default function Project() {
     }, []);
 
     return (
-        <div className="antialiased text-gray-800 bg-gray-100">
+        <div className="antialiased text-gray-800 bg-gray-400">
             <div className="container relative flex flex-col px-6 mx-auto space-y-8">
-                <div className="absolute inset-0 z-0 w-2 h-full bg-white shadow-md left-17 md:mx-auto md:right-0 md:left-0"></div>
+                <div className="absolute inset-0 z-0 w-2 h-full bg-white shadow-md left-38 md:mx-auto md:right-0 md:left-0"></div>
                 {projectData && projectData.map((project, index)=> (
-                <div className="relative z-10 ">
+                <div className="relative z-10 p-10 ">
                     <img src={project.mainImage.asset.url} alt={project.mainImage.alt} className="timeline-img" />
                     <div className={`${index % 2 === 0 ? "timeline-container-left timeline-container" : "timeline-container" }`} >
                         <div className={`${index % 2 === 0 ? "timeline-pointer-left timeline-pointer" : "timeline-pointer" }`} aria-hidden="true"></div>
-                        <div className="p-6 bg-white rounded-md shadow-md">
+                        <div className="p-6 bg-white rounded-md shadow-md sm:p-2">
                             <p className="pt-1">{project.description}</p>
                         </div>
                     </div>

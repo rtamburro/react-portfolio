@@ -35,7 +35,12 @@ export default function Project() {
                         <div className={`${index % 2 === 0 ? "timeline-pointer-left timeline-pointer" : "timeline-pointer" }`} aria-hidden="true"></div>
                         <div className="p-6 mb-2 bg-white rounded-md shadow-md sm:p-2">
                             <p className="pt-1">{project.description}</p>
+                            <br></br>
+                            <div className="inline-flex">
+                                {project.tags.map( type => ( <ul>{type}</ul> ))}
+                            </div>
                         </div>
+                        
                         <div class="inline-flex">
                             <a href={project.link} rel="noopener noreferrer" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">

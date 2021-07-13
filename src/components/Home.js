@@ -1,12 +1,12 @@
 import React from "react"
-import image from "../elk.jpg"
+import image from "../magma.jpg"
 
 export default function Home() {
     return (
     <main>
-        <img src={image} alt="elk" className="absolute object-cover w-full h-full" />
-        <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-            <h1 className="text-6xl text-red-900 font-bold leading-none lg:leading-snug">Hello, I'm Ronnie.</h1>
+        <img src={image} alt="magma" className="absolute object-cover w-full h-full" />
+        <section className="relative flex justify-center min-h-screen px-8 pt-12 lg:pt-64">
+            <h1 className="text-6xl font-bold leading-none text-white lg:leading-snug">Hello, I'm Ronnie.</h1>
         </section>
     </main>
     );

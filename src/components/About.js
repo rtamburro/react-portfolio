@@ -1,6 +1,5 @@
 import React, { useEffect, useState} from "react";
 import sanityClient from "../client.js";
-import moose from "../moose.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
@@ -26,10 +25,9 @@ export default function About() {
     return (
         <body>
             <main className="relative">
-                <img src={moose} alt="Moose" className="absolute w-full -z-10" />
                 <div className="container relative p-10 mx-auto lg:pt-48">
                     <section className="p-20 bg-yellow-500 rounded-lg shadow-2xl lg:flex">
-                        <img src={urlFor(author.authorImage).url()} className="w-32 h-32 mr-8 rounded lg:w-64 lg:h-64" alt={author.name} />
+                        <img src={urlFor(author.authorImage).url()} className="w-20 h-20 mr-8 rounded lg:w-40 lg:h-48" alt={author.name} />
                         <div className="flex flex-col justify-center text-lg">
                             <h1 className="mb-4 text-6xl text-yellow-300">Hey there. I'm{" "}
                             <span className="text-yellow-100">{author.name}</span></h1>

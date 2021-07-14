@@ -4,23 +4,24 @@ import { SocialIcon } from "react-social-icons"
 
 export default function NavBar() {
     return (
-        <header className="bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+        <header className="bg-blueGray-900">
             <div className="container flex justify-between mx-auto">
-                <nav className="flex">
-                    <NavLink to="/" exact activeClassName="text-white" className="inline-flex items-center px-3 py-6 mr-4 text-4xl font-bold tracking-widest text-green-300 hover:text-green-900">
+                <nav className="flex text-neonPink">
+                    <NavLink to="/" exact activeClassName="text-white" className="inline-flex items-center px-3 py-6 mr-4 text-4xl font-bold tracking-widest ">
                         Ronnie
                     </NavLink>
-                    <NavLink to="/projects" activeClassName="text-green-100 bg-gray-700" className="inline-flex items-center px-3 py-3 my-6 text-green-200 rounded hover:text-green-900">
+                    <NavLink to="/projects" activeClassName="text-white" className="inline-flex items-center px-3 my-8 rounded ">
                         Projects
                     </NavLink>
-                    <NavLink to="/about" activeClassName="text-green-100 bg-gray-700" className="inline-flex items-center px-3 py-3 my-6 text-green-200 rounded hover:text-green-900">
+                    <NavLink to="/about" activeClassName="text-white" className="inline-flex items-center px-3 py-3 my-8 rounded ">
                         About Me!
                     </NavLink>
                 </nav>
                 <div className="inline-flex px-3 py-3 my-6">
-                    <SocialIcon url="https://www.linkedin.com/in/ronnie-tamburro-b79296202/" className="mr-4" target="_blank" fgColor="#fff" style={{height:35, width:35}} />
-                    <SocialIcon url="https://github.com/rtamburro" className="mr-4" target="_blank" fgColor="#fff" style={{height:35, width:35}} />
-                    <SocialIcon url="https://www.instagram.com/rtamburro39/" className="mr-4" target="_blank" fgColor="#fff" style={{height:35, width:35}} />
+                    <p className="pr-4 mt-2 text-white ">Contact</p>
+                    <SocialIcon url="https://github.com/rtamburro" className="mr-4" target="_blank" fgColor="#fff" style={{height:40, width:40}} />
+                    <SocialIcon url="https://www.linkedin.com/in/ronnie-tamburro-b79296202/" className="mr-4" target="_blank" fgColor="#fff" style={{height:40, width:40}} />
+                    <a href="mailto:ronnie.tamburro@protonmail.com"><SocialIcon network="email" className="mr-4" target="_blank" fgColor="#fff" style={{height:40, width:40}} /></a>
                 </div>
             </div>
         </header>

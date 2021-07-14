@@ -5,11 +5,15 @@ import About from "./components/About";
 import SingleProject from "./components/SingleProject";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import LeftNav from "./components/LeftNav";
+import RightNav from "./components/RightNav";
 
 
 function App() {
   return (
     <BrowserRouter>
+    <LeftNav />
+    <RightNav />
     <NavBar />
       <Switch>
         <Route component={Home} path='/' exact />

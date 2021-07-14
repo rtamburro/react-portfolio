@@ -25,7 +25,12 @@ module.exports = {
       white: colors.white,
       black: colors.black,
       blueGray: colors.blueGray,
-      neonPink: '#FF105e'
+      neonPink: '#FF105e',
+      odin: '#CC9543'
+    },
+    backdropFilter:{
+      'none': 'none',
+      'blur': 'blur(20px)'
     },
     screens: {
       'xs': '480px',

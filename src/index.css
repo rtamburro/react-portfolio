@@ -13,10 +13,4 @@
     .timeline-container-left {
         @apply md:ml-0 md:mr-auto md:pl-0 md:pr-36;
     }
-    .timeline-pointer {
-        @apply absolute inset-0 w-8 h-8 transform rotate-45 bg-white -z-10 left-20 xs:top-11 xs:left-46 md:left-34;
-    }
-    .timeline-pointer-left {
-        @apply md:left-auto md:right-34;
-    }
 }

@@ -14,10 +14,10 @@ export default function NavBar() {
                             <line x1="12" y1="13" x2="17" y2="20" />
                         </svg>
                     </NavLink>
-                    <NavLink to="/projects" activeClassName="text-white" className="inline-flex items-center px-3 my-8 rounded ">
+                    <NavLink to="/projects" activeClassName="text-green-300" className="inline-flex items-center px-3 my-8 rounded ">
                         Projects
                     </NavLink>
-                    <NavLink to="/about" activeClassName="text-white" className="inline-flex items-center px-3 py-3 my-8 rounded ">
+                    <NavLink to="/about" activeClassName="text-green-300" className="inline-flex items-center px-3 py-3 my-8 rounded ">
                         About Me!
                     </NavLink>
                 </nav>

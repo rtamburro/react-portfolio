@@ -4,6 +4,10 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    stroke: theme => ({
+      'green': theme('colors.green.300'),
+      'current': 'currentColor'
+    }),
     colors: {
       gray: colors.gray,
       red: colors.red,
@@ -55,7 +59,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fill: ['hover', 'focus'],
+    },
   plugins: [
     require('@tailwindcss/typography')
   ],

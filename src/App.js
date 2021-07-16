@@ -15,7 +15,6 @@ function App() {
     <LeftNav />
     <RightNav />
     <NavBar />
-    <Home />
       <Switch>
         <Route component={Home} path='/home' exact />
         <Route component={About} path='/about' />

@@ -38,6 +38,32 @@ export default {
           },
         ],
       },
+      {
+        name: 'bioDescription',
+        title: 'Bio 2',
+        type: 'array',
+        of: [
+          {
+            title: 'Block',
+            type: 'block',
+            styles: [{title: 'Normal', value: 'normal'}],
+            lists: [],
+          },
+        ],
+      },
+      {
+        name: 'bioDescription2',
+        title: 'Bio 3',
+        type: 'array',
+        of: [
+          {
+            title: 'Block',
+            type: 'block',
+            styles: [{title: 'Normal', value: 'normal'}],
+            lists: [],
+          },
+        ],
+      },
     ],
     preview: {
       select: {

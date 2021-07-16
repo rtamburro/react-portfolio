@@ -15,6 +15,8 @@ export default function About() {
         sanityClient.fetch(`*[_type == "author"]{
             name,
             bio,
+            bioDescription,
+            bioDescription2,
             "authorImage": image.asset->url
         }`).then((data) => setAuthor(data[0]))
         .catch(console.error);
@@ -25,19 +27,38 @@ export default function About() {
     return (
         <body className="min-h-screen bg-blueGray-900">
             <main className="relative">
-                <div className="container relative p-10 mx-auto lg:pt-24">
-                    <section className="p-20 rounded-lg lg:flex">
-                        <img src={urlFor(author.authorImage).url()} className="w-20 h-20 mr-8 rounded lg:w-40 lg:h-48" alt={author.name} />
+                <div className="container relative p-10 mx-auto">
+                    <section className="justify-center p-20 rounded-lg lg:flex">
+                        <img src={urlFor(author.authorImage).url()} className="w-20 h-20 mr-8 rounded-xl lg:w-40 lg:h-48" alt={author.name} />
                         <div className="flex flex-col justify-center text-lg">
                             <h1 className="mb-4 text-6xl text-neonPink">Hey there. I'm{" "}
                             <span className="text-white">{author.name}</span></h1>
-                            <div className="prose text-white lg:prose-xl">
+                            <div className="prose text-green-300 lg:prose-xl">
                                 <BlockContent blocks={author.bio} projectId="ynxx5tsz" dataset="production" />
                             </div>
                         </div>
                     </section>
-
+                    <div className="flex space-x-20">
+                        <section className="w-1/2 mr-4 leading-relaxed text-justify text-white">
+                            <BlockContent blocks={author.bioDescription} projectId="ynxx5tsz" dataset="production" />
+                        </section>
+                        <section className="w-1/2 mr-4 leading-relaxed text-justify text-white">
+                            <BlockContent blocks={author.bioDescription2} projectId="ynxx5tsz" dataset="production" />
+                        </section>
+                    </div>
                 </div>
+                {/* <div className="container items-center p-10 mx-auto leading-relaxed text-center text-white">
+                    <div className="justify-center ">
+                        <p className="mb-4 text-2xl">In the News:</p>
+                    </div>
+                    <div className="justify-center ">
+                        <ul>
+                            <a href="https://mcla.us/news/2016/09/uconn-announces-staff-hires" rel="noopener noreferrer" target="_blank"><li>"UConn Announces Staff Hires"</li></a>
+                            <a href="https://issuu.com/da.scroll/docs/the_deerfield_sroll_march_7_2019" rel="noopener noreferrer" target="_blank"><li>"DA Student Newspaper 2019"</li></a>
+                            <a href="https://issuu.com/da.scroll/docs/the_20deerfield_20scroll_20october_" rel="noopener noreferrer" target="_blank"><li>"DA Student Newspaper 2017"</li></a>
+                        </ul>
+                    </div>
+                </div> */}
             </main>
 
 

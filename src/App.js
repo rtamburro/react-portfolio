@@ -16,12 +16,12 @@ function App() {
     <RightNav />
     <NavBar />
       <Switch>
-        <Route component={Home} path='/home' exact />
+        <Route component={Home} path='/react-portfolio' exact />
         <Route component={About} path='/about' />
         <Route component={Project} path='/projects' />
         <Route component={Contact} path='/contact' />
         <Route path="/" exact>
-          <Redirect to="/home" />
+          <Redirect to="/react-portfolio" />
         </Route>
       </Switch>
     </BrowserRouter>

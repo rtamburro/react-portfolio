@@ -31,8 +31,8 @@ export default function About() {
                     <section className="justify-center p-20 rounded-lg lg:flex">
                         <img src={urlFor(author.authorImage).url()} className="w-20 h-20 mr-8 rounded-xl lg:w-40 lg:h-48" alt={author.name} />
                         <div className="flex flex-col justify-center text-lg">
-                            <h1 className="mb-4 text-6xl text-neonPink">Hey there, I'm{" "}.
-                            <span className="text-white">{author.name}</span></h1>
+                            <h1 className="mb-4 text-6xl text-neonPink">Hey there, I'm{" "}
+                            <span className="text-white">{author.name}</span></h1>.
                             <div className="prose text-green-300 lg:prose-xl">
                                 <BlockContent blocks={author.bio} projectId="ynxx5tsz" dataset="production" />
                             </div>

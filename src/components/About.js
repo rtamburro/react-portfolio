@@ -37,7 +37,7 @@ export default function About() {
                             </div>
                         </div> */}
                     </section>
-                    <section className="ml-10 mr-10 text-sm leading-relaxed text-justify text-white md:ml-28 md:mr-28 lg:ml-32 lg:mr-32 lg:text-lg">
+                    <section className="ml-10 mr-10 text-sm leading-relaxed text-justify text-white xl:ml-60 xl:mr-60 md:ml-28 md:mr-28 lg:ml-32 lg:mr-32 lg:text-lg">
                         <p>Hi There! My name is Ronnie and I enjoy creating things that reside on the internet. My interest in web development began in the summer of 2020 when I decided to jump ship from the Strength & Conditioning realm and give coding a gander. 
                         I started with Python to get my feet wet and soon enough I was dabbling with <a href="https://www.pyimagesearch.com/" rel="noopener noreferrer" target="_blank"> <span className="font-bold border-b-2 border-white text-pyimagesearch">Pyimagesearch</span> </a>. After some time I decided to start 
                             <a href="https://www.theodinproject.com/home" rel="noopener noreferrer" target="_blank"> <span className="font-bold border-b-2 border-cyan-300 text-odin">The Odin Project</span> </a> 

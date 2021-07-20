@@ -46,6 +46,10 @@ export default {
             type: "url",
         },
         {
+            name: "odin",
+            type: "url",
+        },
+        {
             name: "tags",
             type: "array",
             of: [

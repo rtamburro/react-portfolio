@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useTransition, animated } from 'react-spring'
 import NavigationMenu from './NavigationMenu'
 import { NavLink } from "react-router-dom"
+import pdf from '../documents/resume.pdf'
 
 function Navigation() {
     const [showMenu, setShowMenu] = useState(false);
@@ -50,19 +51,19 @@ function Navigation() {
                     )
                 }
              </nav>
-             <nav className="hidden text-neonPink md:flex md:justify-end">
-                <NavLink to="/projects" activeClassName="text-green-300" className="inline-flex items-center px-3 my-8 rounded hover:text-green-300 ">
+             <nav className="hidden md:text-xl lg:text-2xl text-neonPink md:flex md:justify-end">
+                <NavLink to="/projects" activeClassName="text-green-300" className="inline-flex items-center px-4 my-8 rounded hover:text-green-300 ">
                     Projects
                 </NavLink>
-                <NavLink to="/about" activeClassName="text-green-300" className="inline-flex items-center px-3 py-3 my-8 rounded hover:text-green-300 ">
+                <NavLink to="/about" activeClassName="text-green-300" className="inline-flex items-center px-4 py-3 my-8 rounded hover:text-green-300 ">
                     About
                 </NavLink>
-                <NavLink to="/contact" activeClassName="text-green-300" className="inline-flex items-center px-3 py-3 my-8 rounded hover:text-green-300 ">
+                <NavLink to="/contact" activeClassName="text-green-300" className="inline-flex items-center px-4 py-3 my-8 rounded hover:text-green-300 ">
                     Contact
                 </NavLink>
+                <a href={pdf} rel="noopener noreferrer" target="_blank" activeClassName="text-green-300" className="inline-flex items-center px-4 my-8 border-2 border-green-300 rounded hover:text-green-300">Resume</a>
             </nav>
         </div>
-        
     )
 }
 

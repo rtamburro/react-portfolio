@@ -33,10 +33,10 @@ export default function Project() {
                     <img src={project.mainImage.asset.url} alt={project.mainImage.alt} className="timeline-img" />
                     <div className={`${index % 2 === 0 ? "timeline-container-left timeline-container" : "timeline-container" }`} >
                         <p className="pt-1 pb-1 pr-2 mb-3 text-lg font-bold text-center uppercase bg-gray-900 border-2 border-white md:bg-opacity-0 bg-none md:border-none sm:text-center md:text-left text-neonPink">{project.title}</p>
-                        <div className="p-4 mb-2 bg-gray-900 border-2 border-white rounded-md shadow-lg md:p-2 md:border-none sm:p-2 md:bg-gradient-to-br from-gray-500">
+                        <div className="p-4 mb-2 overflow-hidden bg-gray-900 border-2 border-white rounded-md shadow-lg md:p-2 md:border-none sm:p-2 md:bg-gradient-to-br from-gray-500">
                             <p className="pt-1 text-white">{project.description}</p>
                             <br></br>
-                            <div className="flex justify-end space-x-2 text-green-300 xl:space-x-6 sm:justify-center md:text-center md:justify-end">
+                            <div className="flex justify-end space-x-2 text-green-300 md:grid md:grid-cols-1 md:space-y-2 mobile:space-y-0 xl:space-x-6 sm:justify-center md:text-center mobile:flex mobile:justify-end mobile:space-x-4">
                                 {project.tags.map( type => ( <ul>{type}</ul> ))}
                             </div>
                         </div>

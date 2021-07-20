@@ -30,7 +30,8 @@ module.exports = {
       black: colors.black,
       blueGray: colors.blueGray,
       neonPink: '#FF105e',
-      odin: '#CC9543'
+      odin: '#CC9543',
+      pyimagesearch: '#1178ae'
     },
     backdropFilter:{
       'none': 'none',
@@ -45,6 +46,23 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      backgroundColor:{
+        'blueGray-t-50': 'rgba(0,0,0,0.75)'
+      },
+      width:{
+        '110': '28rem',
+        '120': '32rem',
+        '130': '36rem',
+        '140': '40rem',
+        '150': '50rem'
+      },
+      height:{
+        '110': '28rem',
+        '120': '32rem',
+        '130': '36rem',
+        '140': '40rem',
+        '150': '50rem'
+      },
       inset: {
         '17': '68px',
         '26': '104px',

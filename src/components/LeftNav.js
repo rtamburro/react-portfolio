@@ -2,7 +2,7 @@ import React from "react"
 
 export default function LeftNav() {
     return (
-        <div className="fixed z-20 w-10 h-full ml-10 mr-auto">
+        <div className="fixed z-20 hidden w-10 h-full ml-10 mr-auto md:ml-5 lg:flex">
             <ul className="flex flex-col items-center justify-end h-full space-y-4 text-white">
                 <a href="https://github.com/rtamburro" rel="noopener noreferrer" target="_blank"><li className=""><svg xmlns="http://www.w3.org/2000/svg" class="stroke-current text-neonPink hover:stroke-current hover:text-green-300 icon icon-tabler icon-tabler-brand-github" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -15,7 +15,7 @@ export default function LeftNav() {
                 <a href="mailto:ronnie.tamburro@protonmail.com" rel="noopener noreferrer" target="_blank"><li className=""><svg xmlns="http://www.w3.org/2000/svg" class="stroke-current text-neonPink hover:stroke-current hover:text-green-300 icon icon-tabler icon-tabler-mail" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="3" y="5" width="18" height="14" rx="2" /><polyline points="3 7 12 13 21 7" />
                 </svg></li></a>
-                <div className="w-px mt-10 h-36 bg-neonPink "></div>
+                <div className="w-px mt-10 h-36 md:h-24 bg-neonPink "></div>
             </ul>
         </div>
     )

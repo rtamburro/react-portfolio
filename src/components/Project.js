@@ -25,22 +25,22 @@ export default function Project() {
 
     return (
         <div className="antialiased text-white bg-blueGray-900">
-            <div className="container relative flex flex-col px-6 mx-auto space-y-8">
+            <div className="relative flex flex-col px-6 mx-auto space-y-8 lg:container">
                 <div className="absolute inset-0 z-0 w-2 h-full shadow-md bg-neonPink left-38 md:mx-auto md:right-0 md:left-0"></div>
                 {projectData && projectData.map((project, index)=> (
                 <div className="relative z-10 p-10 ">
                     <img src={project.mainImage.asset.url} alt={project.mainImage.alt} className="timeline-img" />
                     <div className={`${index % 2 === 0 ? "timeline-container-left timeline-container" : "timeline-container" }`} >
-                        <p className="mb-3 text-2xl font-bold uppercase text-neonPink">{project.title}</p>
-                        <div className="p-6 mb-2 rounded-md shadow-lg sm:p-2 bg-gradient-to-br from-gray-500 to-transparent">
+                        <p className="pt-1 pb-1 pr-2 mb-3 text-lg font-bold text-center uppercase bg-gray-900 border-2 border-white md:bg-opacity-0 bg-none md:border-none sm:text-center md:text-left text-neonPink">{project.title}</p>
+                        <div className="p-4 mb-2 bg-gray-900 border-2 border-white rounded-md shadow-lg md:p-2 md:border-none sm:p-2 md:bg-gradient-to-br from-gray-500">
                             <p className="pt-1 text-white">{project.description}</p>
                             <br></br>
-                            <div className="flex justify-end space-x-4 text-green-300">
+                            <div className="flex justify-end space-x-2 text-green-300 sm:justify-center md:text-center md:justify-end">
                                 {project.tags.map( type => ( <ul>{type}</ul> ))}
                             </div>
                         </div>
                         
-                        <div class="inline-flex mt-1">
+                        <div className="inline-flex mt-1">
                             <a href={project.github} rel="noopener noreferrer" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current text-neonPink hover:stroke-current hover:text-green-300 icon icon-tabler icon-tabler-brand-github" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5"  fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

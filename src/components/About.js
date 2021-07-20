@@ -45,7 +45,7 @@ export default function About() {
                         </p>
                         <br></br>
                         <p>Fast-forward to today, and I’ve learned more than I could have imagined! I’m currently teaching my self React as well as creating a full-stack Ruby on Rails application that referee 
-                            assignors can use to assign referees games for their chosen sport. Here are a few technologies I’ve worked with:
+                            assignors can use to assign referees games for their chosen sport.
                         </p>
                     </section>
                     <br></br>

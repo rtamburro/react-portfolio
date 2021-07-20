@@ -12,8 +12,6 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <BrowserRouter>
-    <LeftNav />
-    <RightNav />
     <NavBar />
       <Switch>
         <Route component={Home} path='/home' exact />          
@@ -24,6 +22,8 @@ function App() {
           <Redirect to="/home" />
         </Route>
       </Switch>
+    <LeftNav />
+    <RightNav />
     </BrowserRouter>
   )
 }

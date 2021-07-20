@@ -36,7 +36,7 @@ export default function Project() {
                         <div className="p-4 mb-2 bg-gray-900 border-2 border-white rounded-md shadow-lg md:p-2 md:border-none sm:p-2 md:bg-gradient-to-br from-gray-500">
                             <p className="pt-1 text-white">{project.description}</p>
                             <br></br>
-                            <div className="flex justify-end space-x-2 text-green-300 sm:justify-center md:text-center md:justify-end">
+                            <div className="flex justify-end space-x-2 text-green-300 xl:space-x-6 sm:justify-center md:text-center md:justify-end">
                                 {project.tags.map( type => ( <ul>{type}</ul> ))}
                             </div>
                         </div>

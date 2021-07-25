@@ -14,18 +14,13 @@ function App() {
     <BrowserRouter>
     <RightNav />
     <LeftNav />
-    
     <NavBar />
       <Switch>
-        <Route exact path='/home' component={Home} />          
-        <Route component={About} path='/about' />
-        <Route component={Project} path='/projects' />
+        <Route component={Home} path="/" exact />
+        <Route component={About} path="/about" />
+        <Route component={Project} path="/project" />
         <Route component={Contact} path='/contact' />
-        <Route path="/" exact>                                 
-          <Redirect to="/home" />
-        </Route>
       </Switch>
-    
     </BrowserRouter>
   )
 }

@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React from "react";
+import { browserHistory, Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
 import About from "./components/About";
@@ -11,17 +12,17 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
-    <RightNav />
-    <LeftNav />
-    <NavBar />
-      <Switch>
-        <Route component={Home} path="/" exact />
-        <Route component={About} path="/about" />
-        <Route component={Project} path="/projects" />
-        <Route component={Contact} path='/contact' />
-      </Switch>
-    </BrowserRouter>
+    <Router history={browserHistory}>
+      <RightNav />
+      <LeftNav />
+      <NavBar />
+        <Switch>
+          <Route component={Home} path="/" exact />
+          <Route component={About} path="/about" />
+          <Route component={Project} path="/projects" />
+          <Route component={Contact} path='/contact' />
+        </Switch>
+    </Router>
   )
 }
 

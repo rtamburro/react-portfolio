@@ -28,7 +28,7 @@ export default function About() {
         <body className="min-h-screen bg-blueGray-900">
             <div className="">
                     <section className="p-10">
-                        <img src={urlFor(author.authorImage).url()} className="w-48 h-56 mx-auto rounded-xl" alt={author.name} />
+                        <img src={urlFor(author.authorImage).url()} className="w-56 mx-auto h-80 rounded-xl" alt={author.name} />
                         {/* <div className="absolute hidden md:block">
                             <h1 className="text-neonPink">Hey there, I'm{" "}
                             <span className="text-white">{author.name}</span>.</h1>

@@ -44,7 +44,7 @@ export default function About() {
                             to jumpstart my web development career. 
                         </p>
                         <br></br>
-                        <p>Fast-forward to today, and I’ve learned more than I could have imagined! I’m currently teaching my self React as well as creating a full-stack Ruby on Rails application that referee 
+                        <p>Fast-forward to today, and I’ve learned more than I could have imagined! I’m currently teaching myself React as well as creating a full-stack Ruby on Rails application that referee 
                             assignors can use to assign referees games for their chosen sport.
                         </p>
                     </section>
